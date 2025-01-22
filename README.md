@@ -1,7 +1,5 @@
 # Containerizing a Flask API with Docker
 
-skills: docker, guide
-
 ## 1. Prerequisite
 
 Ensure that Python and Docker desktop is installed. Refer to the [docker official website](https://www.docker.com/) for installation guide.
