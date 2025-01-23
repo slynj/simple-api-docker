@@ -6,7 +6,7 @@ Ensure that Python and Docker desktop is installed. Refer to the [docker officia
 
 ## 2. Set Virtual Environment
 
-Create a python virtual environment using the command below. It’s recommended to use venv as 
+Create a Python virtual environment using the command below. It’s recommended to use venv because it allows you to install only the dependencies needed for this project.
 
 ```python
 python3 -m venv venv
@@ -100,8 +100,14 @@ __pycache__/
 
 ## 6.  Docker Image Build
 
+> A Docker image is an  executable package that includes everything needed to run an application. (Code, Runtime, Libraries, Configurations, etc.) !immutable!
 > 
 > 
+> Docker image → blueprint for creating containers. A container is a running **instance of an image.**
+> 
+
+> Image build process → creating a Docker image based on instructions defined in a `Dockerfile` that we just created.
+>
 
 Go to your project (root) directory. For me, it is `simple api-docker`.
 
@@ -127,8 +133,11 @@ docker images
 
 ## 7. Run Container
 
+> Container is a running instance of a Docker image, providing an isolated environment for the application. Runtime environment created from the Docker Image.
 > 
-> 
+
+> Run container is the process of starting a container from a Docker image, making the application active and operational.
+>
 
 ```bash
 docker run -d -p 5000:5000 flask-docker-api
